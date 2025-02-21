@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-import PDFViewer from '../components/forms/PDFViewer';
 import AnimatedHeading from '../components/ui/AnimatedHeading';
 
 const forms = [
@@ -45,8 +43,6 @@ const forms = [
 const categories = Array.from(new Set(forms.map(form => form.category)));
 
 export default function Forms() {
-  const [selectedForm, setSelectedForm] = useState<string | null>(null);
-
   return (
     <div className="relative isolate">
       {/* Hero section */}
@@ -55,7 +51,7 @@ export default function Forms() {
           <div className="mx-auto max-w-2xl text-center">
             <AnimatedHeading
               title="Forms & Documents"
-              subtitle="Access and complete necessary forms for your massage therapy sessions. You can view forms online or download them for later completion."
+              subtitle="Access and download necessary forms for your massage therapy sessions. Please complete these forms before your appointment."
             />
           </div>
         </div>
@@ -64,50 +60,34 @@ export default function Forms() {
 
       {/* Forms section */}
       <div className="container py-24">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
-          {/* Forms list */}
-          <div className="lg:col-span-1">
-            <nav className="flex flex-col space-y-8">
-              {categories.map((category) => (
-                <div key={category}>
-                  <h2 className="text-lg font-semibold text-neutral-900 mb-4">{category}</h2>
-                  <ul className="space-y-2">
-                    {forms
-                      .filter(form => form.category === category)
-                      .map(form => (
-                        <li key={form.id}>
-                          <button
-                            onClick={() => setSelectedForm(form.id)}
-                            className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
-                              selectedForm === form.id
-                                ? 'bg-primary-50 text-primary-900'
-                                : 'hover:bg-neutral-50 text-neutral-600'
-                            }`}
-                          >
-                            <span className="block font-medium">{form.title}</span>
-                            <span className="block text-sm mt-1">{form.description}</span>
-                          </button>
-                        </li>
-                      ))}
-                  </ul>
-                </div>
-              ))}
-            </nav>
-          </div>
-
-          {/* PDF viewer */}
-          <div className="lg:col-span-2">
-            {selectedForm ? (
-              <PDFViewer
-                file={forms.find(f => f.id === selectedForm)?.file || ''}
-                title={forms.find(f => f.id === selectedForm)?.title || ''}
-              />
-            ) : (
-              <div className="flex items-center justify-center h-full min-h-[500px] rounded-lg bg-neutral-50 border border-neutral-200">
-                <p className="text-neutral-600">Select a form to view</p>
+        <div className="max-w-4xl mx-auto">
+          {categories.map((category) => (
+            <div key={category} className="mb-12 last:mb-0">
+              <h2 className="text-2xl font-semibold text-neutral-900 mb-6">{category}</h2>
+              <div className="grid gap-6">
+                {forms
+                  .filter(form => form.category === category)
+                  .map(form => (
+                    <div
+                      key={form.id}
+                      className="bg-white rounded-lg border border-neutral-200 p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                    >
+                      <div>
+                        <h3 className="text-lg font-medium text-neutral-900">{form.title}</h3>
+                        <p className="mt-1 text-neutral-600">{form.description}</p>
+                      </div>
+                      <a
+                        href={form.file}
+                        download
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 whitespace-nowrap"
+                      >
+                        Download PDF
+                      </a>
+                    </div>
+                  ))}
               </div>
-            )}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
