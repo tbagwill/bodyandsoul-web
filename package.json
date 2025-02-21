@@ -11,16 +11,10 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
-    "@react-pdf-viewer/core": "^3.12.0",
-    "@react-pdf-viewer/default-layout": "^3.12.0",
-    "@react-pdf-viewer/toolbar": "^3.12.0",
-    "@react-pdf/renderer": "^4.2.2",
     "framer-motion": "^12.4.7",
     "next": "15.1.7",
-    "pdfjs-dist": "^3.4.120",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-pdf": "^9.2.1",
     "yet-another-react-lightbox": "^3.21.7"
   },
   "devDependencies": {
