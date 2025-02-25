@@ -22,29 +22,47 @@ const values = [
 
 const services = [
   {
-    name: 'Massage Therapy',
-    description: 'Our core massage services include Swedish relaxation massage, deep tissue massage, and specialized treatments. Each session can be enhanced with hot stones, and our 90-minute sessions provide extra time for focused attention. Choose from 75 or 90-minute sessions for a truly transformative experience.',
-    duration: '75-90 min',
-    price: '$85-115',
+    name: 'Relaxation Massage',
+    description: 'Our signature relaxation massage is designed to promote deep relaxation, reduce stress, and ease muscle tension. Choose from our popular 60-minute session perfect for quick relief, or indulge in our 90-minute session for a more thorough, full-body experience with extra attention to problem areas.',
+    duration: '60-90 min',
+    price: '$70-95',
   },
   {
-    name: 'Wellness Treatments',
-    description: 'Complement your massage with our wellness treatments. Experience the benefits of red light therapy for skin health and muscle recovery, ionic foot detox for natural cleansing, or our hot sauna blanket session for detoxification and relaxation.',
-    duration: '20-30 min',
-    price: '$25-40',
+    name: 'Reiki & Energy Healing',
+    description: 'Experience the gentle power of energy healing with our Reiki sessions. Our one-hour sessions promote physical and emotional well-being through gentle touch, helping to restore balance and harmony. Available as standalone sessions or combined with massage therapy for a holistic healing experience.',
+    duration: '60 min',
+    price: '$100',
+  },
+  {
+    name: 'Birthday Package',
+    description: 'Make your special day even more memorable with our luxurious birthday package. This carefully curated experience includes a customized massage session and special wellness treats designed to celebrate and rejuvenate. The perfect way to treat yourself or someone special.',
+    duration: 'Custom',
+    price: '$100',
+  },
+  {
+    name: 'Massage Therapy',
+    description: 'From relaxing Swedish massage to deep tissue and sports massage, our comprehensive massage therapy options cater to your specific needs. Our signature treatments include hot stones and scalp massage for complete relaxation, ensuring a truly customized experience.',
+    duration: 'Varies',
+    price: 'From $70',
+  },
+  {
+    name: 'Wellness Enhancements',
+    description: 'Enhance your wellness journey with our selection of therapeutic treatments. Choose from red light therapy sessions for skin health and muscle recovery, ionic foot detox for natural cleansing, and hot sauna blanket treatments for detoxification and rejuvenation.',
+    duration: '20-45 min',
+    price: 'From $25',
   },
   {
     name: 'Body Sculpting',
-    description: 'Our non-invasive body contouring treatments use advanced cavitation and radio-frequency technology to help eliminate stubborn fat and contour your body. Available as single sessions or cost-effective packages for optimal results.',
-    duration: '1 hr 30 min',
-    price: '$80-420',
+    description: 'Our non-invasive body contouring treatments use advanced cavitation and radio frequency technology to help achieve your body goals. These treatments are perfect for targeting stubborn areas and enhancing your natural contours.',
+    duration: 'Custom',
+    price: 'From $80',
   },
   {
-    name: 'Energy Healing & Reiki',
-    description: 'Experience the gentle power of energy healing with our Reiki sessions. Choose from standalone Reiki treatments or combine with massage therapy for a holistic healing experience that addresses both physical and energetic well-being.',
-    duration: '30-90 min',
-    price: '$50-125',
-  },
+    name: 'Energy Healing',
+    description: 'Discover the transformative power of our energy healing treatments. We offer various modalities including Reiki therapy, which can be experienced as a standalone treatment or combined with massage for a deeper healing experience that addresses both physical and energetic well-being.',
+    duration: 'Varies',
+    price: 'From $50',
+  }
 ];
 
 export default function About() {
@@ -99,9 +117,9 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-medium text-neutral-900">Lead Therapist</h3>
+                <h3 className="text-2xl font-medium text-neutral-900">Celeste Trevino</h3>
                 <p className="mt-4 text-base leading-7 text-neutral-600">
-                  With over a decade of experience in therapeutic massage, our lead therapist specializes in creating personalized treatment plans that address your unique needs and goals.
+                  Celeste has always sought out a career geared towards helping others. With a background in the medical field, she has witnessed how stress can affect the body. With a more holistic approach, she has found massage therapy to be a powerful tool for healing and relaxation. Celeste has obtained her license in massage therapy as well as body sculpting and Reiki healing practices. Her motto is: "If you have a body, you can benefit from a massage."
                 </p>
               </div>
             </div>

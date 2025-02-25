@@ -34,17 +34,41 @@ export default function Home() {
       <div className="container py-24">
         <div className="mx-auto max-w-2xl text-center">
           <AnimatedHeading
-            title="Our Services"
+            title="Popular Services"
             subtitle="Choose from our comprehensive range of wellness services designed to rejuvenate your body and soul."
           />
         </div>
-        <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {[
+            {
+              title: '60 Min Relaxation Massage',
+              description:
+                'A soothing full-body massage designed to promote relaxation, reduce stress, and ease muscle tension. Perfect for first-time clients or those seeking gentle relief.',
+              price: '$70.00',
+            },
+            {
+              title: '90 Min Relaxation Massage',
+              description:
+                'An extended relaxation massage that allows for deeper work and more attention to problem areas. Ideal for those seeking a thorough, full-body relaxation experience.',
+              price: '$95.00',
+            },
+            {
+              title: 'Reiki Session',
+              description:
+                'A one-hour energy healing session that promotes physical and emotional well-being through gentle touch. Experience deep relaxation and restored balance.',
+              price: '$100.00',
+            },
+            {
+              title: 'Birthday Package',
+              description:
+                'Celebrate your special day with our luxurious birthday package. Includes a customized massage experience and special wellness treats to make your day memorable.',
+              price: '$100.00',
+            },
             {
               title: 'Massage Therapy',
               description:
                 'From relaxing Swedish massage to deep tissue and sports massage. Our signature treatments include hot stones and scalp massage for complete relaxation.',
-              price: 'From $85.00',
+              price: 'From $70.00',
             },
             {
               title: 'Wellness Enhancements',
