@@ -119,7 +119,7 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-medium text-neutral-900">Celeste Trevino</h3>
                 <p className="mt-4 text-base leading-7 text-neutral-600">
-                  Celeste has always sought out a career geared towards helping others. With a background in the medical field, she has witnessed how stress can affect the body. With a more holistic approach, she has found massage therapy to be a powerful tool for healing and relaxation. Celeste has obtained her license in massage therapy as well as body sculpting and Reiki healing practices. Her motto is: "If you have a body, you can benefit from a massage."
+                  Celeste has always sought out a career geared towards helping others. With a background in the medical field, she has witnessed how stress can affect the body. With a more holistic approach, she has found massage therapy to be a powerful tool for healing and relaxation. Celeste has obtained her license in massage therapy as well as body sculpting and Reiki healing practices. Her motto is: &ldquo;If you have a body, you can benefit from a massage.&rdquo;
                 </p>
               </div>
             </div>
