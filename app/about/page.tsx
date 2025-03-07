@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedHeading from '../components/ui/AnimatedHeading';
 
 const values = [
@@ -112,9 +113,14 @@ export default function About() {
           <div className="mt-16">
             <div className="space-y-8">
               <div className="relative mx-auto h-64 w-64 overflow-hidden rounded-full">
-                <div className="absolute inset-0 bg-primary-100 flex items-center justify-center">
-                  <span className="text-primary-600 text-lg">Photo Coming Soon</span>
-                </div>
+                <Image
+                  src="/photos/Headshot.JPG"
+                  alt="Celeste Trevino"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 256px, 256px"
+                  priority
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-neutral-900">Celeste Trevino</h3>

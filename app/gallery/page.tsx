@@ -1,58 +1,41 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import Placeholder from '../components/ui/Placeholder';
 import AnimatedHeading from '../components/ui/AnimatedHeading';
 
-// Placeholder images for now - these will be replaced with actual massage therapy/spa images
 const galleryItems = [
   {
     id: 1,
-    title: 'Reception Area',
-    description: 'Our welcoming reception area where your journey to relaxation begins.',
-    imageSrc: '/images/placeholder-1.jpg',
+    title: 'Main Treatment Room',
+    description: 'Our serene main treatment room where your relaxation journey takes place.',
+    imageSrc: '/photos/MainRoom.JPG',
     width: 1920,
     height: 1280,
   },
   {
     id: 2,
-    title: 'Treatment Room 1',
-    description: 'A peaceful treatment room designed for your comfort.',
-    imageSrc: '/images/placeholder-2.jpg',
+    title: 'Ambient Lighting',
+    description: 'Soft, calming lights create the perfect atmosphere for relaxation.',
+    imageSrc: '/photos/Lights.JPG',
     width: 1920,
     height: 1280,
   },
   {
     id: 3,
-    title: 'Treatment Room 2',
-    description: 'Another of our tranquil treatment spaces.',
-    imageSrc: '/images/placeholder-3.jpg',
+    title: 'Cozy Fireplace',
+    description: 'Our warm and inviting fireplace adds to the peaceful ambiance.',
+    imageSrc: '/photos/Fireplace.JPG',
     width: 1920,
     height: 1280,
   },
   {
     id: 4,
-    title: 'Relaxation Area',
-    description: 'A comfortable space to unwind before or after your treatment.',
-    imageSrc: '/images/placeholder-4.jpg',
-    width: 1920,
-    height: 1280,
-  },
-  {
-    id: 5,
-    title: 'Product Display',
-    description: 'We offer a curated selection of wellness products.',
-    imageSrc: '/images/placeholder-5.jpg',
-    width: 1920,
-    height: 1280,
-  },
-  {
-    id: 6,
-    title: 'Exterior View',
-    description: 'Our peaceful location.',
-    imageSrc: '/images/placeholder-6.jpg',
+    title: 'Professional Certifications',
+    description: 'Our commitment to excellence and continued education.',
+    imageSrc: '/photos/Certifications.JPG',
     width: 1920,
     height: 1280,
   },
@@ -84,18 +67,19 @@ export default function Gallery() {
 
       {/* Gallery grid */}
       <div className="container py-24">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {galleryItems.map((item, index) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden rounded-xl cursor-pointer"
+              className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer"
               onClick={() => openLightbox(index)}
             >
-              <Placeholder
-                width={item.width}
-                height={item.height}
-                text={item.title}
-                className="transition duration-300 group-hover:scale-105"
+              <Image
+                src={item.imageSrc}
+                alt={item.title}
+                fill
+                className="object-cover transition duration-300 group-hover:scale-105"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-neutral-900/40 opacity-0 transition duration-300 group-hover:opacity-100" />
               <div className="absolute inset-x-4 bottom-4 opacity-0 transition duration-300 group-hover:opacity-100">
@@ -114,8 +98,6 @@ export default function Gallery() {
         index={photoIndex}
         slides={galleryItems.map(item => ({
           src: item.imageSrc,
-          width: item.width,
-          height: item.height,
           alt: item.title,
         }))}
       />
