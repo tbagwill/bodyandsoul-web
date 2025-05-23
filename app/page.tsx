@@ -44,59 +44,48 @@ export default function Home() {
               title: '60 Min Relaxation Massage',
               description:
                 'A soothing full-body massage designed to promote relaxation, reduce stress, and ease muscle tension. Perfect for first-time clients or those seeking gentle relief.',
-              price: '$70.00',
             },
             {
               title: '90 Min Relaxation Massage',
               description:
                 'An extended relaxation massage that allows for deeper work and more attention to problem areas. Ideal for those seeking a thorough, full-body relaxation experience.',
-              price: '$95.00',
             },
             {
               title: 'Reiki Session',
               description:
                 'A one-hour energy healing session that promotes physical and emotional well-being through gentle touch. Experience deep relaxation and restored balance.',
-              price: '$100.00',
             },
             {
               title: 'Birthday Package',
               description:
                 'Celebrate your special day with our luxurious birthday package. Includes a customized massage experience and special wellness treats to make your day memorable.',
-              price: '$100.00',
             },
             {
               title: 'Massage Therapy',
               description:
                 'From relaxing Swedish massage to deep tissue and sports massage. Our signature treatments include hot stones and scalp massage for complete relaxation.',
-              price: 'From $70.00',
             },
             {
               title: 'Wellness Enhancements',
               description:
                 'Enhance your wellness journey with our red light therapy sessions, ionic foot detox, and hot sauna blanket treatments for detoxification and rejuvenation.',
-              price: 'From $25.00',
             },
             {
               title: 'Body Sculpting',
               description:
                 'Advanced body contouring treatments using cavitation and radio frequency technology. Non-invasive procedures to help achieve your body goals.',
-              price: 'From $80.00',
             },
             {
               title: 'Energy Healing',
               description:
                 'Experience the healing power of Reiki energy therapy, available as standalone sessions or combined with massage for deeper healing and relaxation.',
-              price: 'From $50.00',
             },
           ].map((service) => (
             <div
               key={service.title}
               className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-neutral-900/10 hover:shadow-md transition-shadow"
             >
-              <div className="flex justify-between items-start">
-                <h3 className="text-xl font-semibold leading-7 text-neutral-900">{service.title}</h3>
-                <span className="text-sm text-primary-600 font-medium">{service.price}</span>
-              </div>
+              <h3 className="text-xl font-semibold leading-7 text-neutral-900">{service.title}</h3>
               <p className="mt-4 text-base leading-7 text-neutral-600">{service.description}</p>
             </div>
           ))}

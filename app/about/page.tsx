@@ -26,43 +26,36 @@ const services = [
     name: 'Relaxation Massage',
     description: 'Our signature relaxation massage is designed to promote deep relaxation, reduce stress, and ease muscle tension. Choose from our popular 60-minute session perfect for quick relief, or indulge in our 90-minute session for a more thorough, full-body experience with extra attention to problem areas.',
     duration: '60-90 min',
-    price: '$70-95',
   },
   {
     name: 'Reiki & Energy Healing',
     description: 'Experience the gentle power of energy healing with our Reiki sessions. Our one-hour sessions promote physical and emotional well-being through gentle touch, helping to restore balance and harmony. Available as standalone sessions or combined with massage therapy for a holistic healing experience.',
     duration: '60 min',
-    price: '$100',
   },
   {
     name: 'Birthday Package',
     description: 'Make your special day even more memorable with our luxurious birthday package. This carefully curated experience includes a customized massage session and special wellness treats designed to celebrate and rejuvenate. The perfect way to treat yourself or someone special.',
     duration: 'Custom',
-    price: '$100',
   },
   {
     name: 'Massage Therapy',
     description: 'From relaxing Swedish massage to deep tissue and sports massage, our comprehensive massage therapy options cater to your specific needs. Our signature treatments include hot stones and scalp massage for complete relaxation, ensuring a truly customized experience.',
     duration: 'Varies',
-    price: 'From $70',
   },
   {
     name: 'Wellness Enhancements',
     description: 'Enhance your wellness journey with our selection of therapeutic treatments. Choose from red light therapy sessions for skin health and muscle recovery, ionic foot detox for natural cleansing, and hot sauna blanket treatments for detoxification and rejuvenation.',
     duration: '20-45 min',
-    price: 'From $25',
   },
   {
     name: 'Body Sculpting',
     description: 'Our non-invasive body contouring treatments use advanced cavitation and radio frequency technology to help achieve your body goals. These treatments are perfect for targeting stubborn areas and enhancing your natural contours.',
     duration: 'Custom',
-    price: 'From $80',
   },
   {
     name: 'Energy Healing',
     description: 'Discover the transformative power of our energy healing treatments. We offer various modalities including Reiki therapy, which can be experienced as a standalone treatment or combined with massage for a deeper healing experience that addresses both physical and energetic well-being.',
     duration: 'Varies',
-    price: 'From $50',
   }
 ];
 
@@ -72,11 +65,10 @@ export default function About() {
       {/* Hero section */}
       <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-primary-100/20">
         <div className="container py-24 sm:py-32">
-          <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mx-auto max-w-2xl">
             <AnimatedHeading
               title="About Body & Soul"
               subtitle="Welcome to Body & Soul Rejuvenation, where we blend traditional massage techniques with modern therapeutic practices to help you achieve optimal wellness. Our mission is to provide a peaceful sanctuary where you can relax, rejuvenate, and restore your body's natural balance."
-              align="left"
             />
           </div>
         </div>
@@ -149,8 +141,6 @@ export default function About() {
                       {service.name}
                     </h3>
                     <div className="text-sm font-medium">
-                      <span className="text-primary-600">{service.price}</span>
-                      <span className="mx-2 text-neutral-400">•</span>
                       <span className="text-neutral-600">{service.duration}</span>
                     </div>
                   </div>

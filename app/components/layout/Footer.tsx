@@ -45,7 +45,13 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-neutral-500">
+        <div className="mt-10 text-center">
+          <address className="text-sm leading-5 text-neutral-500 not-italic">
+            42402 10th Street West, Suite H<br />
+            Lancaster, CA 93534
+          </address>
+        </div>
+        <p className="mt-6 text-center text-xs leading-5 text-neutral-500">
           &copy; {new Date().getFullYear()} Body & Soul Rejuvenation. All rights reserved.
         </p>
       </div>
