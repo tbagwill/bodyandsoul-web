@@ -8,7 +8,7 @@ export default function BookingLayout({
   return (
     <>
       <Header />
-      <main className="flex-grow pt-20">{children}</main>
+      <main className="flex-grow">{children}</main>
     </>
   );
 } 

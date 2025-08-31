@@ -4,7 +4,7 @@ const navigation = {
   main: [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Gallery', href: '/gallery' },
+    { name: 'Setup', href: '/setup' },
     { name: 'Book Now', href: '/booking' },
   ],
   social: [
@@ -46,10 +46,10 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-10 text-center">
-          <address className="text-sm leading-5 text-neutral-500 not-italic">
-            42402 10th Street West, Suite H<br />
-            Lancaster, CA 93534
-          </address>
+          <p className="text-sm leading-5 text-neutral-500">
+            Mobile Massage Therapy Service<br />
+            Serving the Antelope Valley Area
+          </p>
         </div>
         <p className="mt-6 text-center text-xs leading-5 text-neutral-500">
           &copy; {new Date().getFullYear()} Body & Soul Rejuvenation. All rights reserved.

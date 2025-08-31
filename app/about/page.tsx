@@ -17,44 +17,36 @@ const values = [
   },
   {
     name: 'Peaceful Environment',
-    description: "We've created a tranquil space where you can escape the stresses of daily life and focus on your wellness journey.",
+    description: "We bring tranquility directly to you, transforming your own space into a serene sanctuary where you can escape daily stresses and focus on your wellness journey.",
   },
 ];
 
 const services = [
   {
     name: 'Relaxation Massage',
-    description: 'Our signature relaxation massage is designed to promote deep relaxation, reduce stress, and ease muscle tension. Choose from our popular 60-minute session perfect for quick relief, or indulge in our 90-minute session for a more thorough, full-body experience with extra attention to problem areas.',
+    description: 'Our signature mobile relaxation massage brings deep relaxation, stress reduction, and muscle tension relief directly to your home. Choose from our popular 60-minute session perfect for quick relief, or indulge in our 90-minute session for a more thorough, full-body experience in the comfort of your own space.',
     duration: '60-90 min',
   },
-  {
-    name: 'Reiki & Energy Healing',
-    description: 'Experience the gentle power of energy healing with our Reiki sessions. Our one-hour sessions promote physical and emotional well-being through gentle touch, helping to restore balance and harmony. Available as standalone sessions or combined with massage therapy for a holistic healing experience.',
-    duration: '60 min',
-  },
-  {
-    name: 'Birthday Package',
-    description: 'Make your special day even more memorable with our luxurious birthday package. This carefully curated experience includes a customized massage session and special wellness treats designed to celebrate and rejuvenate. The perfect way to treat yourself or someone special.',
-    duration: 'Custom',
-  },
+
+
   {
     name: 'Massage Therapy',
-    description: 'From relaxing Swedish massage to deep tissue and sports massage, our comprehensive massage therapy options cater to your specific needs. Our signature treatments include hot stones and scalp massage for complete relaxation, ensuring a truly customized experience.',
+    description: 'From relaxing Swedish massage to deep tissue and sports massage, our comprehensive mobile massage therapy options cater to your specific needs in your own space. Our signature treatments include hot stones and scalp massage for complete relaxation, bringing a truly customized spa experience to you.',
     duration: 'Varies',
   },
   {
     name: 'Wellness Enhancements',
-    description: 'Enhance your wellness journey with our selection of therapeutic treatments. Choose from red light therapy sessions for skin health and muscle recovery, ionic foot detox for natural cleansing, and hot sauna blanket treatments for detoxification and rejuvenation.',
+    description: 'Enhance your wellness journey with our selection of mobile therapeutic treatments delivered to your location. Choose from red light therapy sessions for skin health and muscle recovery, and hot sauna blanket treatments for detoxification and rejuvenation.',
     duration: '20-45 min',
   },
   {
     name: 'Body Sculpting',
-    description: 'Our non-invasive body contouring treatments use advanced cavitation and radio frequency technology to help achieve your body goals. These treatments are perfect for targeting stubborn areas and enhancing your natural contours.',
+    description: 'Our mobile non-invasive body contouring treatments use advanced cavitation and radio frequency technology delivered in the comfort of your home. Perfect for targeting stubborn areas and enhancing your natural contours with convenient scheduling.',
     duration: 'Custom',
   },
   {
     name: 'Energy Healing',
-    description: 'Discover the transformative power of our energy healing treatments. We offer various modalities including Reiki therapy, which can be experienced as a standalone treatment or combined with massage for a deeper healing experience that addresses both physical and energetic well-being.',
+    description: 'Discover the transformative power of our mobile energy healing treatments brought directly to your space. We offer various modalities including Reiki therapy, which can be experienced as a standalone treatment or combined with massage for a deeper healing experience in the comfort of your home.',
     duration: 'Varies',
   }
 ];
@@ -68,7 +60,7 @@ export default function About() {
           <div className="mx-auto max-w-2xl">
             <AnimatedHeading
               title="About Body & Soul"
-              subtitle="Welcome to Body & Soul Rejuvenation, where we blend traditional massage techniques with modern therapeutic practices to help you achieve optimal wellness. Our mission is to provide a peaceful sanctuary where you can relax, rejuvenate, and restore your body's natural balance."
+              subtitle="Welcome to Body & Soul Rejuvenation, where we bring traditional massage techniques and modern therapeutic practices directly to you. Our mobile service delivers optimal wellness in the comfort of your own space, creating a peaceful sanctuary wherever you are."
             />
           </div>
         </div>
@@ -78,10 +70,10 @@ export default function About() {
       {/* Values section */}
       <div className="container py-24 sm:py-32">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <AnimatedHeading
-            title="Our Values"
-            subtitle="At Body & Soul Rejuvenation, our values guide everything we do. We're committed to providing exceptional care in a nurturing environment."
-          />
+                      <AnimatedHeading
+              title="Our Values"
+              subtitle="At Body & Soul Rejuvenation, our values guide everything we do. We're committed to bringing exceptional care and creating nurturing environments wherever our clients are."
+            />
           <dl className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2">
             {values.map((value) => (
               <div key={value.name} className="relative">
@@ -153,6 +145,46 @@ export default function About() {
             <Link href="/booking" className="btn">
               Book Your Session
             </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Service Area section */}
+      <div className="container py-24 sm:py-32 bg-primary-50">
+        <div className="mx-auto max-w-2xl lg:max-w-4xl text-center">
+          <AnimatedHeading
+            title="Service Area"
+            subtitle="We proudly serve the Antelope Valley and surrounding areas, bringing professional wellness services directly to your location."
+          />
+          <div className="mt-16">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-neutral-900">Primary Areas</h3>
+                <p className="mt-4 text-base text-neutral-600">
+                  Lancaster • Palmdale • Quartz Hill<br />
+                  Acton • Agua Dulce • Littlerock
+                </p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-neutral-900">Extended Service</h3>
+                <p className="mt-4 text-base text-neutral-600">
+                  Santa Clarita • Newhall • Valencia<br />
+                  Saugus • Canyon Country
+                </p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-neutral-900">Travel Distance</h3>
+                <p className="mt-4 text-base text-neutral-600">
+                  Up to 30 miles from Lancaster<br />
+                  Special arrangements available
+                </p>
+              </div>
+            </div>
+            <div className="mt-12">
+              <p className="text-sm text-neutral-500">
+                Don&apos;t see your area listed? Contact us to discuss service availability in your location.
+              </p>
+            </div>
           </div>
         </div>
       </div>

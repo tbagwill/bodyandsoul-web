@@ -16,8 +16,8 @@ export default function Home() {
       <div className="container py-24 sm:py-32">
         <div className="mx-auto max-w-2xl text-center">
           <AnimatedHeading
-            title="Discover Your Path to Wellness"
-            subtitle="Experience the transformative power of professional massage therapy at Body & Soul Rejuvenation. Let us guide you on your journey to relaxation and renewal."
+            title="Wellness Comes to You"
+            subtitle="Experience the transformative power of professional mobile massage therapy with Body & Soul Rejuvenation. We bring relaxation and renewal directly to your doorstep for the ultimate convenience."
           />
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link href="/booking" className="btn">
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="mx-auto max-w-2xl text-center">
           <AnimatedHeading
             title="Popular Services"
-            subtitle="Choose from our comprehensive range of wellness services designed to rejuvenate your body and soul."
+            subtitle="Choose from our comprehensive range of mobile wellness services delivered directly to your location to rejuvenate your body and soul."
           />
         </div>
         <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -43,42 +43,34 @@ export default function Home() {
             {
               title: '60 Min Relaxation Massage',
               description:
-                'A soothing full-body massage designed to promote relaxation, reduce stress, and ease muscle tension. Perfect for first-time clients or those seeking gentle relief.',
+                'A soothing mobile full-body massage delivered to your location, designed to promote relaxation, reduce stress, and ease muscle tension in the comfort of your own space.',
             },
             {
               title: '90 Min Relaxation Massage',
               description:
-                'An extended relaxation massage that allows for deeper work and more attention to problem areas. Ideal for those seeking a thorough, full-body relaxation experience.',
+                'An extended mobile relaxation massage that allows for deeper work and more attention to problem areas. Ideal for those seeking a thorough, full-body relaxation experience at home.',
             },
-            {
-              title: 'Reiki Session',
-              description:
-                'A one-hour energy healing session that promotes physical and emotional well-being through gentle touch. Experience deep relaxation and restored balance.',
-            },
-            {
-              title: 'Birthday Package',
-              description:
-                'Celebrate your special day with our luxurious birthday package. Includes a customized massage experience and special wellness treats to make your day memorable.',
-            },
+
+
             {
               title: 'Massage Therapy',
               description:
-                'From relaxing Swedish massage to deep tissue and sports massage. Our signature treatments include hot stones and scalp massage for complete relaxation.',
+                'From relaxing Swedish massage to deep tissue and sports massage, delivered to your location. Our mobile signature treatments include hot stones and scalp massage for complete relaxation.',
             },
             {
               title: 'Wellness Enhancements',
               description:
-                'Enhance your wellness journey with our red light therapy sessions, ionic foot detox, and hot sauna blanket treatments for detoxification and rejuvenation.',
+                'Enhance your wellness journey with our mobile red light therapy sessions and hot sauna blanket treatments delivered to your space for detoxification and rejuvenation.',
             },
             {
               title: 'Body Sculpting',
               description:
-                'Advanced body contouring treatments using cavitation and radio frequency technology. Non-invasive procedures to help achieve your body goals.',
+                'Mobile body contouring treatments using advanced cavitation and radio frequency technology, delivered in your home. Non-invasive procedures to help achieve your body goals.',
             },
             {
               title: 'Energy Healing',
               description:
-                'Experience the healing power of Reiki energy therapy, available as standalone sessions or combined with massage for deeper healing and relaxation.',
+                'Experience the healing power of mobile Reiki energy therapy brought to your space, available as standalone sessions or combined with massage for deeper healing and relaxation.',
             },
           ].map((service) => (
             <div

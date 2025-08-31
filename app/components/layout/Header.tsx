@@ -22,7 +22,7 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Gallery', href: '/gallery' },
+  { name: 'Setup', href: '/setup' },
   { name: 'Forms', href: '/forms' },
   { name: 'Book Now', href: '/booking' },
 ];

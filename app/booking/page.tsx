@@ -10,7 +10,7 @@ export default function Booking() {
           display: none !important;
         }
       `}</style>
-      <div className="container pt-2">
+      <div className="container">
         <div className="max-w-4xl mx-auto">
           <SquareBookingWidget />
         </div>
